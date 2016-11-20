@@ -6,8 +6,5 @@
    <feature url="features/turnus.orcc.feature_1.0.0.qualifier.jar" id="turnus.orcc.feature" version="1.0.0.qualifier">
       <category name="turnus"/>
    </feature>
-   <feature url="features/turnus.neo4j.feature_1.0.0.qualifier.jar" id="turnus.neo4j.feature" version="1.0.0.qualifier">
-      <category name="turnus"/>
-   </feature>
    <category-def name="turnus" label="TURNUS"/>
 </site>

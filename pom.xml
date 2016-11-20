@@ -15,7 +15,6 @@
 	<modules>
 		<module>../turnus.core</module>
 		<module>../turnus.orcc</module>
-		<module>../turnus.neo4j</module>
 		<module>turnus.site</module>
 	</modules>
 
