@@ -173,7 +173,7 @@
 	</build>
 
 	<modules>
-		<module>../turnus.core</module>
+		<module>../turnus</module>
 		<module>../turnus.orcc</module>
 		<module>turnus.site</module>
 	</modules>
