@@ -4,11 +4,25 @@
 	<artifactId>turnus.site</artifactId>
 	<packaging>eclipse-repository</packaging>
 	<version>1.0.0-SNAPSHOT</version>
+
 	<parent>
 		<groupId>turnus</groupId>
 		<artifactId>turnus.p2</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>2.1</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<tycho-version>1.6.0</tycho-version>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -27,6 +41,14 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<pomDependencies>consider</pomDependencies>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
